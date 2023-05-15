@@ -1,5 +1,3 @@
-Thank you for the clarification. Here's an updated README file:
-
 # Advice Generator App
 
 This is an advice generator app project created using React.js. The app generates random pieces of advice to help users with their problems. The advice is fetched from an external API.
@@ -7,6 +5,13 @@ This is an advice generator app project created using React.js. The app generate
 ## Demo
 
 You can view a live demo of the project here: https://vaqueraoscar0.github.io/frontendmentor.io-advice-generator-app
+
+### Screenshot
+
+![QR Code Component preview](./src/design/desktop-design.jpg)
+![QR Code Component preview](./src/design/active-states.jpg)
+![QR Code Component preview](./src/design/mobile-design.jpg)
+
 
 ## Getting Started
 
