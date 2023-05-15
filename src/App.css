@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: monrope, sans-serif;
+  src: url('https://fonts.google.com/specimen/Manrope');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html, #root, body, .App{
+  height: 100%;
+  background: hsl(218, 23%, 16%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.advice{
+  width: 540px;
+  height: 332px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: hsl(217, 19%, 24%);
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.advice-box{
+  margin: 47px 48px 0 48px;
+  height: 213px;
+}
+
+.advice-box-group1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.advice-box-group2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p{
+  font-family: monrope, sans-serif;
+  text-align: center;
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+h5{
+  font-family: Manrope, serif;
+  font-style: normal;
+  font-weight: 800;
+  text-align: center;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  color: #52FFA8;
+}
+
+.advice-box-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.advice-box-button:hover{
+  filter: drop-shadow(0px 0px 15px rgb(156, 255, 156));
+}
+
+.advice-box-button-rec{
+  width: 64px;
+  height: 64px;
+
+  background: #52FFA8;
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 375px) OR (max-height: 667px){
+  .advice{
+    width: 342px;
+    height: 337px;
+    border-radius: 15px;
+
+    background-color: hsl(217, 19%, 24%);
+
   }
-  to {
-    transform: rotate(360deg);
+
+  p{
+    font-size: 24px;
+  }
+
+  h5{
+    font-size: 12px;
+  }
+
+  .advice-box-button{
+    margin-top: 30px;
   }
 }
